@@ -1,0 +1,168 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-size: 110%;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/1920x1080/?nature,landscape');
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+
+}
+
+.container {
+    background: linear-gradient( to right, #0F2027, #203A43, #2C5364);
+    width: 100%;
+    max-width: 500px;
+    
+    row-gap: 15px;
+    padding: 1em;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: azure;
+}
+
+.search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.search-bar {
+    max-width: calc(100% - 100px);
+    font-size: 1em;
+    color: white;
+    background-color: #69767aa8;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+.search-bar::placeholder {
+    color: rgba(240, 255, 255, 0.404);
+}
+
+.search button {
+    height: 45px;
+    width: 45px;
+    color: white;
+    background-color: #69767aa8;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa.fa-search {
+    color: white;
+    pointer-events: none;
+}
+
+.search button:hover,
+.search-bar:hover {
+    background-color: #69767ae3 
+}
+
+.city {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    
+}
+.temp {
+    margin-top: 5px;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+}
+
+.humidity,
+.wind {
+    padding-left: 49px;
+}
+.weather {
+    max-width: 380px;
+    width: 100%;
+    position: sticky;
+    right: 100%;
+    margin-left: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.theme-container {
+    margin-top: 20px;
+    height: 200px;
+    background-color: transparent;
+    max-width: 45px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa-brush {
+    pointer-events: none;
+}
+
+
+.Moonlit-Asteroid {
+    height: 45px;
+    width: 45px;
+    color: white;
+    background: linear-gradient( to right, #0F2027, #203A43, #2C5364);
+    border: 2px solid azure;
+    outline: none;
+    border-radius: 100%;
+}
+
+.eXpresso {
+    height: 45px;
+    width: 45px;
+    color: white;
+    background: linear-gradient( to right, #ad5389, #3c1053);
+    border: 2px solid azure;
+    outline: none;
+    border-radius: 100%;
+}
+
+.Argon {
+    height: 45px;
+    width: 45px;
+    color: white;
+    background: linear-gradient( to right, #03001e, #7303c0, #ec38bc, #fdeff9);
+    border:2px solid azure;
+    outline: none;
+    border-radius: 100%;
+}
+
+.Vine {
+    height: 45px;
+    width: 45px;
+    color: white;
+    background: linear-gradient( to right, #870000, #190A05);
+    border:2px solid azure;
+    outline: none;
+    border-radius: 100%;
+}
